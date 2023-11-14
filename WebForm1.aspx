@@ -10,15 +10,15 @@
     
     <hr>
 
-    <label for="email"><b>Email</b></label>
+    <label for="email"><b>Email:</b></label>
     <asp:TextBox ID="txbEmail" placeholder="Digite seu email" runat="server"  />
     <br />
     
-      <label for="senha"><b>Password</b></label>
+      <label for="senha"><b>Senha:</b></label>
     <asp:TextBox ID="txbSenha" placeholder="Digite sua senha" runat="server" />
     <br />
     
-    <label for="senhaRepete"><b>Confirme sua senha</b></label>
+    <label for="senhaRepete"><b>Confirme sua senha:</b></label>
     <asp:TextBox ID="txbsenhaRepete" placeholder="Confirme sua senha" runat="server" />
     <br />
 
