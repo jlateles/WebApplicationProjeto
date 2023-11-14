@@ -26,7 +26,7 @@ namespace WebApplicationProjeto
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        conexao.ConnectionString = "Data Source=51DE247989\\SENAC;Initial CatalogL = escola;Integrated Security=true";
+        conexao.ConnectionString = "Data Source=51DE247989\\SENAC;Initial Catalog = escola;Integrated Security=true";
         conexao.Open();
 
         }
@@ -35,7 +35,7 @@ namespace WebApplicationProjeto
         public void checarUsuario() {
 
             dataSet = new DataSet();
-            comandos.CommandText = "INSERT INTO aluno(email, senha)VALUES(' " + txbEmail.Text.ToString() + " ', ' " + txbSenha.Text.ToString() + " ')";
+            comandos.CommandText = "SELECT * FROM aluno WHERE email='" + txbEmail.Text + "' AND senha='" + txbSenha.Text + "' ";
             comandos.Connection = conexao;
             adaptadorSql = new SqlDataAdapter(comandos);
             adaptadorSql.Fill(dataSet);
@@ -52,7 +52,7 @@ namespace WebApplicationProjeto
 
                 /* cria um cookie com os dados de email do banco*/
                 HttpCookie cookieEmail = new HttpCookie("cookieEmail", dadosEmail);
-                ; Response.Cookies.Add(cookieEmail); /*adiciona o cookie a seção*/
+                Response.Cookies.Add(cookieEmail); /*adiciona o cookie a seção*/
 
                 /* cria um cookie com o id_aluno do banco*/
                 HttpCookie cookieId = new HttpCookie("cookieId", dadosId);
