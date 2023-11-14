@@ -1,12 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplicationProjeto.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WebApplicationProjeto.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+<!-- Inicio do Código Content2 -->
     <form action="/action_page.php">
-  
+
     <div class="container">
     <h1>Login</h1>
+    <p>Digite Suas Informações.</p>
     
     <hr>
 
@@ -21,13 +22,15 @@
         <asp:GridView ID="gdvExibir" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
         
         
+        
     <hr>
 
     <!-- <button type="submit" class="registerbtn">Entrar</button> --> 
-   <asp:Button ID="btnLogin" runat="server" Text="Entrar" OnClick="btnLogin_Click" />
+   <asp:Button ID="btnLogin" class="registerbtn" runat="server" Text="Entrar" OnClick="btnLogin_Click" />
   </div>
 
     <asp:Label ID="lblMensagem" Text="Resposta" runat="server"></asp:Label>
+        
 </form>
-
+<!-- Fim do Código Content2 -->
 </asp:Content>
