@@ -23,6 +23,7 @@
     <br />
 
         <asp:GridView ID="gdvExibir" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+        <asp:SqlDataSource runat="server" ID="SqlDataSource1"></asp:SqlDataSource>
         
  
  
