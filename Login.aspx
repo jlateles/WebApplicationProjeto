@@ -19,7 +19,7 @@
     <asp:TextBox ID="txbSenha" placeholder="Digite sua senha" runat="server" />
     <br />
 
-        <asp:GridView ID="gdvExibir" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+        <asp:GridView ID="gdvExibir" runat="server" ></asp:GridView>
         
         
         
