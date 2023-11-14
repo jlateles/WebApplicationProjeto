@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+/* Biliotecas SQL */
+using System.Data.SqlClient;
+using System.ComponentModel.DataAnnotations;
+using System.Data;
+
 
 
 namespace WebApplicationProjeto
@@ -26,11 +29,6 @@ namespace WebApplicationProjeto
         conexao.ConnectionString = "Data Source=51DE247989\\SENAC;Initial CatalogL = escola;Integrated Security=true";
         conexao.Open();
 
-        }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
-        {
-            checarUsuario();
         }
 
 
@@ -67,6 +65,11 @@ namespace WebApplicationProjeto
                 lblMensagem.Text = "Email ou senha inválido(s)!";
             }
 
+        }
+        
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            checarUsuario();
         }
 
 
