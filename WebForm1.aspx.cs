@@ -52,8 +52,23 @@ namespace WebApplicationProjeto
                 comandos.ExecuteNonQuery(); /* execução da query insert */
                 lblMensagem.Text = "Aluno cadastrado!";
                 lblMensagem.BackColor = System.Drawing.Color.Green;
-               /* ExibirDados(); */ 
+                ExibirDados(); 
             }
+        }
+
+        /* função ExibirDados aqui!!!!!!!!!!!! */
+
+        public void ExibirDados()
+        {
+            dataSet = new DataSet();
+            comandos.CommandText = "SELECT * FROM alunos WHERE email= ' " + txbEmail.Text + " '";
+            comandos.Connection = conexao;
+            adaptadorSql = new SqlDataAdapter(comandos);
+            adaptadorSql.Fill(dataSet);
+            comandos.ExecuteNonQuery();
+            gdvExibir.DataSource = dataSet;
+            gdvExibir.DataBind();
+            conexao.Close();
         }
     }
 
