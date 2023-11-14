@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace WebApplicationProjeto
 {
     public partial class Login : System.Web.UI.Page
@@ -26,6 +27,12 @@ namespace WebApplicationProjeto
         conexao.Open();
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            checarUsuario();
+        }
+
 
         public void checarUsuario() {
 
