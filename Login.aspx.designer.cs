@@ -11,7 +11,7 @@ namespace WebApplicationProjeto
 {
 
 
-    public partial class WebForm2
+    public partial class Login
     {
 
         /// <summary>
