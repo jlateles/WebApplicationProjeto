@@ -107,7 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Control\" />
-    <Folder Include="View\" />
+    <Folder Include="View\css\" />
+    <Folder Include="View\img\" />
+    <Folder Include="View\js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
