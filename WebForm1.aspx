@@ -23,7 +23,7 @@
     <br />
 
         <asp:GridView ID="gdvExibir" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
-        <asp:SqlDataSource runat="server" ID="SqlDataSource1"></asp:SqlDataSource>
+
         
  
  
@@ -35,6 +35,7 @@
   </div>
 
     <asp:Label ID="lblMensagem" Text="Resposta" runat="server"></asp:Label>
+
   
   <div class="container signin">
     <p>Já tem uma conta? <a href="#">Entre aqui</a>.</p>
