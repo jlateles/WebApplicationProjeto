@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\css\StyleSheet.css" />
     <Content Include="View\Cad.aspx" />
     <Content Include="View\Perfil.aspx" />
     <Content Include="Web.config" />
@@ -141,7 +142,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Control\" />
-    <Folder Include="src\css\" />
     <Folder Include="src\img\" />
     <Folder Include="src\js\" />
   </ItemGroup>
