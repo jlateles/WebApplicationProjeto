@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page.master.cs" Inherits="WebApplicationProjeto.Page" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="../src/css/StyleSheet.css" rel="stylesheet" />
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            </form>
+</body>
+</html>
