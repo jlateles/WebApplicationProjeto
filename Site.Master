@@ -7,8 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
-         <link href="../src/css/StyleSheet.css" rel="stylesheet" />
-
+    <link href="..\src\css\StyleSheet.css" rel="stylesheet"/>
     </asp:ContentPlaceHolder>
    
 </head>
