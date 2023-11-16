@@ -3,10 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-   
-  
     <div class="container">
         <h1>Cadastra-se</h1>
+        <p>Digite suas informações: </p>
     
     <hr>
 
@@ -25,7 +24,7 @@
         <asp:GridView ID="gdvExibir" runat="server" ></asp:GridView>
         
     <hr>
-        <p>Criando uma conta você concorda com nossos<a href="#">Termos & Privacidade</a>.</p>
+       
   </div>
 
     <asp:Label ID="lblMensagem" Text="Resposta" runat="server"></asp:Label>
@@ -35,7 +34,7 @@
   <div class="container signin">
     <p>Já tem uma conta? <a href="#">Entre aqui</a>.</p>
   </div>
-
+ <p>Criando uma conta você concorda com nossos<a href="#"> Termos & Privacidade</a>.</p>
 
 
 </asp:Content>
