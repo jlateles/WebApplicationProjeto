@@ -6,7 +6,6 @@
 
     <div class="container">
     <h1>Login</h1>
-    <p>Digite Suas Informações.</p>
     
     <hr>
 
